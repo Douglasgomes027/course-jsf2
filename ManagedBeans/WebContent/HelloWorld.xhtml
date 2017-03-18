@@ -8,8 +8,11 @@
 </h:head>
 <h:body>
 	<h:form>
-		<h:inputText value="Digite aqui"></h:inputText>
-		<h:commandButton value="Confirmar"></h:commandButton>
+		Nome:
+		<h:inputText value="#{helloBean.nome}"></h:inputText>
+		<h:commandButton value="Confirmar" action="#{helloBean.LetraMaiuscula}"></h:commandButton>
+		
+		Nome: #{helloBean.nome}
 	</h:form>
 </h:body>
 </html>
